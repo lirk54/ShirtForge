@@ -3,46 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein 3D-Druck Shop</title>
+    <title>3D-Druck Studio | lirk54</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-slate-50 font-sans text-slate-900">
 
-    <nav class="bg-white shadow-sm p-4 text-center">
-        <h1 class="text-2xl font-bold tracking-tight">3D-DRUCK STUDIO</h1>
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter text-blue-600">3D-STUDIO</div>
+            <div class="space-x-8 font-medium">
+                <a href="#produkte" class="hover:text-blue-600 transition">Produkte</a>
+                <a href="#kontakt" class="hover:text-blue-600 transition">Kontakt</a>
+            </div>
+        </div>
     </nav>
 
-    <section class="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-2xl shadow-xl">
-        <div class="md:flex gap-8">
-            <div class="md:w-1/2 bg-gray-200 rounded-xl h-64 flex items-center justify-center">
-                <span class="text-gray-400">Produktfoto hier</span>
-            </div>
+    <header class="bg-slate-900 text-white py-20 px-6 text-center">
+        <h1 class="text-5xl font-extrabold mb-4">Präzise 3D-Drucke</h1>
+        <p class="text-slate-400 max-w-xl mx-auto mb-8">Individuelle Modelle und Gadgets direkt aus der Schweiz.</p>
+        <a href="#produkte" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-full font-bold transition">Shop durchsuchen</a>
+    </header>
+
+    <section id="produkte" class="py-16 max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-10 text-center">Meine Kollektion</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            <div class="md:w-1/2 mt-6 md:mt-0">
-                <h2 class="text-3xl font-extrabold">Individueller Fan-Artikel</h2>
-                <p class="text-gray-500 mt-2">Hochwertiger 3D-Druck aus umweltfreundlichem hyper PLA. Inklusive Personalisierung.</p>
-                
-                <div class="mt-6">
-                    <span class="text-4xl font-bold">CHF 25.00</span>
+            <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-slate-100 p-4">
+                <div class="aspect-square bg-slate-100 rounded-xl mb-4 overflow-hidden flex items-center justify-center">
+                    <img src="bilder/PRODUKTBILD.jpg" alt="3D Druck" class="w-full h-full object-cover shadow-inner">
                 </div>
-
-                <div class="mt-8 p-4 bg-blue-50 border border-blue-100 rounded-xl">
-                    <p class="text-blue-800 font-semibold mb-2">Bezahlung via TWINT</p>
-                    <div class="bg-white w-32 h-32 mx-auto mb-3 flex items-center justify-center border">
-                        <span class="text-[10px] text-gray-400">QR-CODE HIER</span>
-                    </div>
-                    <p class="text-xs text-blue-600 text-center">Scannen & Betrag manuell eingeben</p>
+                <h3 class="text-xl font-bold">Mein 3D-Modell</h3>
+                <p class="text-slate-500 text-sm">Material: PLA | Farbe: Nach Wahl</p>
+                <div class="mt-4 flex justify-between items-center">
+                    <span class="text-2xl font-black text-blue-600 font-mono">CHF 20.00</span>
                 </div>
-
-                <a href="mailto:deine-mail@beispiel.ch" class="block mt-4 text-center bg-black text-white py-3 rounded-lg font-bold hover:bg-gray-800 transition">
-                    Jetzt Anfragen
-                </a>
             </div>
+
         </div>
     </section>
 
-    <footer class="mt-20 p-10 text-center text-gray-400 text-sm">
-        <p>&copy; 2026 Lirk54 | <a href="impressum.html" class="underline">Impressum & Rechtliches</a></p>
+    <section id="kontakt" class="py-16 bg-blue-600 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Einfach zahlen mit TWINT</h2>
+            <div class="bg-white p-4 rounded-2xl inline-block mb-6">
+                <img src="bilder/TWINT_QR.png" alt="TWINT QR" class="w-48 h-48 object-contain shadow-lg">
+            </div>
+            <p class="mb-8">Scanne den Code und gib den Betrag manuell ein.</p>
+            <a href="mailto:deine-mail@beispiel.ch" class="bg-white text-blue-600 px-10 py-4 rounded-full font-bold hover:bg-blue-50 transition">Per E-Mail bestellen</a>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-slate-400 text-xs">
+        &copy; 2026 ShirtForge Studio | Schweiz
     </footer>
 
 </body>
