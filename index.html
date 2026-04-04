@@ -3,59 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D-Druck Studio | lirk54</title>
+    <title>3D-Druck Studio Zurich | Massgeschneiderte Präzision</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body class="bg-slate-50 font-sans text-slate-900">
+<body class="bg-white text-slate-900 overflow-x-hidden">
 
-    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-black tracking-tighter text-blue-600">3D-STUDIO</div>
-            <div class="space-x-8 font-medium">
-                <a href="#produkte" class="hover:text-blue-600 transition">Produkte</a>
-                <a href="#kontakt" class="hover:text-blue-600 transition">Kontakt</a>
-            </div>
+    <nav class="absolute top-0 left-0 w-full z-50 p-6 flex justify-between items-center text-white">
+        <div class="text-3xl font-extrabold tracking-tighter">3D ZURICH</div>
+        <div class="space-x-8 font-medium hidden md:flex">
+            <a href="#" class="hover:text-cyan-300 transition">Start</a>
+            <a href="#" class="hover:text-cyan-300 transition">Portfolio</a>
+            <a href="#" class="hover:text-cyan-300 transition">Kontakt</a>
         </div>
     </nav>
 
-    <header class="bg-slate-900 text-white py-20 px-6 text-center">
-        <h1 class="text-5xl font-extrabold mb-4">Präzise 3D-Drucke</h1>
-        <p class="text-slate-400 max-w-xl mx-auto mb-8">Individuelle Modelle und Gadgets direkt aus der Schweiz.</p>
-        <a href="#produkte" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-full font-bold transition">Shop durchsuchen</a>
+    <header class="relative min-h-screen w-full flex items-center justify-center p-6 text-center text-white">
+        
+        <div class="absolute inset-0 bg-slate-950">
+            <img src="bilder/startseite_hero.jpg" alt="3D Drucker in Aktion" 
+                 class="w-full h-full object-cover object-center opacity-40">
+        </div>
+        
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        
+        <div class="relative z-20 max-w-4xl mx-auto flex flex-col items-center">
+            
+            <h1 class="text-6xl md:text-8xl font-black leading-tight tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-white">
+                Vom Pixel zur <br/> Wirklichkeit.
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-slate-200 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Ich drucke deine Ideen in höchster Präzision. Ob personalisierte Geschenke, Ersatzteile oder Gadgets – direkt aus dem 3D-Drucker zu dir nach Hause.
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="#" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-10 py-5 rounded-full font-bold text-xl shadow-xl shadow-cyan-500/20 transition-all transform hover:-translate-y-1">
+                    Projekte ansehen
+                </a>
+                <a href="#" class="bg-slate-800 hover:bg-slate-700 text-white px-10 py-5 rounded-full font-bold text-xl border border-slate-700/50 transition-all">
+                    Individuelle Anfrage
+                </a>
+            </div>
+            
+        </div>
+        
+        <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-white to-transparent z-20"></div>
+        
     </header>
 
-    <section id="produkte" class="py-16 max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-10 text-center">Meine Kollektion</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-slate-100 p-4">
-                <div class="aspect-square bg-slate-100 rounded-xl mb-4 overflow-hidden flex items-center justify-center">
-                    <img src="bilder/PRODUKTBILD.jpg" alt="3D Druck" class="w-full h-full object-cover shadow-inner">
-                </div>
-                <h3 class="text-xl font-bold">Mein 3D-Modell</h3>
-                <p class="text-slate-500 text-sm">Material: PLA | Farbe: Nach Wahl</p>
-                <div class="mt-4 flex justify-between items-center">
-                    <span class="text-2xl font-black text-blue-600 font-mono">CHF 20.00</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="kontakt" class="py-16 bg-blue-600 text-white">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-4">Einfach zahlen mit TWINT</h2>
-            <div class="bg-white p-4 rounded-2xl inline-block mb-6">
-                <img src="bilder/TWINT_QR.png" alt="TWINT QR" class="w-48 h-48 object-contain shadow-lg">
-            </div>
-            <p class="mb-8">Scanne den Code und gib den Betrag manuell ein.</p>
-            <a href="mailto:deine-mail@beispiel.ch" class="bg-white text-blue-600 px-10 py-4 rounded-full font-bold hover:bg-blue-50 transition">Per E-Mail bestellen</a>
-        </div>
-    </section>
-
-    <footer class="py-10 text-center text-slate-400 text-xs">
-        &copy; 2026 ShirtForge Studio | Schweiz
+    <footer class="py-12 bg-white text-center border-t border-slate-100">
+        <p class="text-slate-500 text-sm">&copy; 2026 ShirtForge Studio, Zurich. Erstellt mit Leidenschaft.</p>
     </footer>
 
 </body>
