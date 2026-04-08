@@ -14,6 +14,7 @@
         <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wider">
             <a href="#" class="text-blue-600">Startseite</a>
             <a href="#kategorien" class="hover:text-blue-600 transition">Produkte</a>
+            <a href="#material" class="hover:text-blue-600 transition">Material & Technik</a>
             <a href="#ueber-mich" class="hover:text-blue-600 transition">Über das Projekt</a>
         </div>
     </nav>
@@ -34,9 +35,14 @@
             </div>
 
             <div class="md:w-1/2 w-full group">
-                <div class="relative aspect-square bg-gray-200 rounded-3xl overflow-hidden shadow-2xl border-8 border-white transition-all duration-500 transform group-hover:-translate-y-4 group-hover:-translate-x-4">
-                    <img src="bilder/3d druck.jpg" alt="3D Druck Nahaufnahme" class="w-full h-full object-cover">
-                </div>
+                <a href="#material" class="block relative aspect-square bg-gray-200 rounded-3xl overflow-hidden shadow-2xl border-8 border-white transition-all duration-500 transform group-hover:-translate-y-4 group-hover:-translate-x-4">
+                    <img src="bilder/3d druck.jpg" alt="3D Druck Nahaufnahme" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:opacity-40">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <span class="bg-black text-white px-6 py-3 rounded-full font-bold shadow-xl">
+                            Mein Material entdecken <i class="fas fa-chevron-down ml-2"></i>
+                        </span>
+                    </div>
+                </a>
             </div>
         </div>
     </header>
@@ -66,7 +72,72 @@
         </div>
     </section>
 
-    <section id="ueber-mich" class="py-20 bg-gray-50 px-8">
+    <section id="material" class="py-24 px-8 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Equipment & Materialien</h2>
+                <p class="text-gray-600">Hier siehst du, womit ich arbeite und welche Materialien ich verwende.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+                <div class="order-2 md:order-1">
+                    <h3 class="text-2xl font-bold mb-6">Mein 3D-Drucker</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Ich setze auf modernste Technik, um höchste Präzision zu garantieren. Mein Drucker ist für hohe Geschwindigkeiten und feine Details optimiert.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-microchip text-blue-600 mr-3"></i> Präzise Schrittmotoren
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-temperature-high text-blue-600 mr-3"></i> Optimiertes Heizbett
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-wind text-blue-600 mr-3"></i> Aktive Bauteilkühlung
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-1 md:order-2 bg-white p-4 rounded-3xl shadow-xl border border-gray-100">
+                    <div class="aspect-video bg-gray-200 rounded-2xl overflow-hidden">
+                        <img src="bilder/drucker.jpg" alt="Mein 3D-Drucker" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-center text-xs text-gray-400 mt-4 italic">Mein aktuelles Setup in Zürich</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-50 hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 text-xl">
+                        <i class="fas fa-fill-drip"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-4">Hyper PLA</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Ideal für schnelle Drucke bei gleichbleibend hoher Qualität. Robust und in vielen Farben verfügbar.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-50 hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center mb-6 text-xl">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-4">Umweltfreundlich</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        PLA ist ein biologisch abbaubarer Kunststoff auf Basis nachwachsender Rohstoffe wie Maisstärke.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-50 hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6 text-xl">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-4">Farbauswahl</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Von klassischem Schwarz und Weiß bis hin zu leuchtenden Neonfarben oder edlen Metallic-Looks.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ueber-mich" class="py-20 bg-white px-8">
         <div class="max-w-3xl mx-auto text-center">
             <div class="w-12 h-1 bg-blue-600 mx-auto mb-8"></div>
             <h2 class="text-3xl font-bold mb-6">Qualität & Leidenschaft</h2>
